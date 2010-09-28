@@ -745,7 +745,7 @@
         <cargo.version>1.0</cargo.version>
         <jmock.version>2.5.1</jmock.version>
         <jsp.version>2.0</jsp.version>
-        <junit.version>4.4</junit.version>
+        <junit.version>4.7</junit.version>
         <servlet.version>2.4</servlet.version>
         <wiser.version>1.2</wiser.version>
 
