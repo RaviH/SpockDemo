@@ -12,6 +12,13 @@
     <context:component-scan base-package="com.mayabansi"/>
 
     <!-- Add new DAOs here -->
+    <bean id="bookDao" class="org.appfuse.dao.hibernate.GenericDaoHibernate">
+        <constructor-arg value="com.mayabansi.webapp.domain.Book"/> 
+    </bean>
+
+    <bean id="customerDao" class="org.appfuse.dao.hibernate.GenericDaoHibernate">
+        <constructor-arg value="com.mayabansi.webapp.domain.Customer"/> 
+    </bean>
 
     <!-- Add new Managers here -->
 </beans>
