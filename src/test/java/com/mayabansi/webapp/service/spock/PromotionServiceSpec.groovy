@@ -50,7 +50,7 @@ class PromotionServiceSpec extends Specification {
         setup:
             Book book1 = new Book().setTitle("Book #1");
             Book book2 = new Book().setTitle("Book #2");
-            2 * bookDao.get(1L) >> book1
+            bookDao.get(1L) >> book1
             bookDao.get(1L) >> book2
 
         when:
@@ -151,13 +151,13 @@ class PromotionServiceSpec extends Specification {
             c << [5, 9]
     }
 
-    @Timeout(2) // make this 1 during presentation 
+    @Timeout(2)
     def "Timeout demo"() {
         setup:
             BigDecimal bd = new BigDecimal(5)
         when:
             bd = bd.multiply(5)
-            Thread.sleep(1000)
+            Thread.sleep(1000) // make this 3 during presentation
         then:
             bd == 25
     }
