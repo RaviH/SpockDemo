@@ -15,7 +15,7 @@ import java.util.List;
  * Time: 1:38:24 AM
  * To change this template use File | Settings | File Templates.
  */
-@Repository("bookDao")
+@Repository("mockBookDao")
 public class BookDaoHibernate extends GenericDaoHibernate<Book, Long> implements BookDao {
 
     public BookDaoHibernate() {
